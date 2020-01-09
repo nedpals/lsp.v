@@ -1,5 +1,5 @@
 # LSP.V
-Implementation of the Language Server Protocol spec on V. For use on the [V-LSP](https://github.com/nedpals/v-lsp)
+Implementation of the Language Server Protocol spec on V. For use on the [VLS](https://github.com/nedpals/vls) language server.
 
 ## Roadmap
 ### General
