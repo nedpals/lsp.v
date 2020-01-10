@@ -1,5 +1,12 @@
 module lsp
 
+// /**
+//  * Color provider options.
+//  */
+// export interface ColorProviderOptions {
+// }
+
+
 // method: ‘textDocument/colorPresentation’
 // response: []ColorPresentation
 pub struct ColorPresentationParams {

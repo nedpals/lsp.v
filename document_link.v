@@ -1,5 +1,9 @@
 module lsp
 
+pub struct DocumentLinkOptions {
+	resolve_provider bool [json:resolveProvider]
+}
+
 // method: ‘textDocument/documentLink’
 // response: []DocumentLink | none
 pub struct DocumentLinkParams {

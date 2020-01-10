@@ -1,5 +1,17 @@
 module lsp
 
+pub struct TextDocumentSyncOptions {
+	open_close bool [json:openClose]
+	change int
+	will_save bool [json:willSave]
+	will_save_wait_until bool [json:willSaveWaitUntil]
+	save SaveOptions
+}
+
+pub struct SaveOptions {
+	include_text bool [json:includeText]
+}
+
 // method: ‘textDocument/didOpen’
 // notification
 pub struct DidOpenTextDocumentParams {

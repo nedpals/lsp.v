@@ -1,5 +1,9 @@
 module lsp
 
+pub struct SignatureHelpOptions {
+	trigger_characters []string [json:triggerCharacters]
+}
+
 // method: ‘textDocument/signatureHelp’
 // response: SignatureHelp | none
 // request: TextDocumentPositionParams

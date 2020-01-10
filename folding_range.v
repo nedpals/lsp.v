@@ -1,5 +1,11 @@
 module lsp
 
+// /**
+//  * Folding range provider options.
+//  */
+// export interface FoldingRangeProviderOptions {
+// }
+
 // method: ‘textDocument/foldingRange’
 // response: []FoldingRange | none
 pub struct FoldingRangeParams {

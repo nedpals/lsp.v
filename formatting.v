@@ -21,6 +21,11 @@ pub struct DocumentRangeFormattingParams {
 	options FormattingOptions
 }
 
+pub struct DocumentOnTypeFormattingOptions {
+	first_trigger_character string [json:firstTriggerCharacter]
+	more_trigger_character []string [json:moreTriggerCharacter]
+}
+
 // method: ‘textDocument/onTypeFormatting’
 // response: []TextEdit | none
 pub struct DocumentOnTypeFormattingParams {

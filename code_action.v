@@ -1,5 +1,9 @@
 module lsp
 
+pub struct CodeActionOptions {
+	code_action_kinds []CodeActionKind [json:codeActionKinds]
+}
+
 // method: ‘textDocument/codeAction’
 // response [](Command | CodeAction) | null
 pub struct CodeActionParams {
@@ -37,13 +41,3 @@ pub struct CodeActionRegistrationOptions {
 	document_selector DocumentSelector [json:documentSelector]
 	code_action_kinds []CodeActionKind [json:codeActionKinds]
 }
-
-// export interface CodeActionOptions {
-// 	/**
-// 	 * CodeActionKinds that this server may return.
-// 	 *
-// 	 * The list of kinds may be generic, such as `CodeActionKind.Refactor`, or the server
-// 	 * may list out every specific kind they provide.
-// 	 */
-// 	codeActionKinds?: CodeActionKind[];
-// }

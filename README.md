@@ -3,8 +3,8 @@ Implementation of the Language Server Protocol spec on V. For use on the [VLS](h
 
 ## Roadmap
 ### General
-- [-] `initialize` (missing capability options structs)
-- [-] `initialized`
+- [x] `initialize`
+- [x] `initialized`
 - [x] `shutdown`
 - [x] `exit`
 - [x] `$/cancelRequest`
@@ -40,10 +40,10 @@ Implementation of the Language Server Protocol spec on V. For use on the [VLS](h
 - [x] `completion resolve`
 - [x] `hover`
 - [x] `signatureHelp`
-- [ ] `declaration`
-- [ ] `definition`
-- [ ] `typeDefinition`
-- [ ] `implementation`
+- [x] `declaration`
+- [x] `definition`
+- [x] `typeDefinition`
+- [x] `implementation`
 - [x] `references`
 - [x] `documentHighlight`
 - [x] `documentSymbol`
@@ -63,6 +63,7 @@ Implementation of the Language Server Protocol spec on V. For use on the [VLS](h
     
     
 ## OTHER TODO
-- Transfer structs and enums on `structs.v` to its appropriate designated files.
+~~- Transfer structs and enums on `structs.v` to its appropriate designated files.~~
+- Generalize file structure (Merging small content-files with bigger ones)
 
 #### 2020 Ned Palacios

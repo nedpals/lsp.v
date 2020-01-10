@@ -1,5 +1,10 @@
 module lsp
 
+pub struct CompletionOptions {
+	resolve_provider bool [json:resolveProvider]
+	trigger_characters []string [json:triggerCharacters]
+}
+
 pub struct CompletionItemKindSettings {
 	value_set []CompletionItemKind [json:valueSet]
 }

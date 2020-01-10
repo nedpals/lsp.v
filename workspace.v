@@ -5,6 +5,12 @@ pub struct WorkspaceFolder {
 	name string
 }
 
+pub struct WorkspaceEdit {
+	document_changes bool [json:documentChanges]
+	resource_operations []string [json:resourceOperations]
+	failure_handling string [json:failureHandling]
+}
+
 pub struct DidChangeWorkspaceFoldersParams {
 	event WorkspaceFoldersChangeEvent
 }

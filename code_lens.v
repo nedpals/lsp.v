@@ -1,5 +1,9 @@
 module lsp
 
+pub struct CodeLensOptions {
+	resolve_provider bool [json:resolveProvider]
+}
+
 // method: ‘textDocument/codeLens’
 // response: []CodeLens | none
 pub struct CodeLensParams {

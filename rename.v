@@ -1,5 +1,9 @@
 module lsp
 
+pub struct RenameOptions {
+	prepare_provider bool [json:prepareProvider]
+}
+
 // method: ‘textDocument/rename’
 // response: WorkspaceEdit | none
 pub struct RenameParams {

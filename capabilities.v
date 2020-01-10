@@ -10,12 +10,6 @@ pub struct WorkspaceClientCapabilities {
 	configuration bool
 }
 
-pub struct WorkspaceEdit {
-	document_changes bool [json:documentChanges]
-	resource_operations []string [json:resourceOperations]
-	failure_handling string [json:failureHandling]
-}
-
 pub struct WorkspaceSymbol {
 	dynamic_registration bool [json:dynamicRegistration]
 	symbol_kind WorkspaceSymbolKind [json:symbolKind]
