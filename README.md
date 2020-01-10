@@ -36,30 +36,30 @@ Implementation of the Language Server Protocol spec on V. For use on the [VLS](h
 ### Diagnostics
 - [x] `publishDiagnostics`
 ### Language Features
-- [ ] `completion`
-- [ ] `completion resolve`
-- [ ] `hover`
-- [ ] `signatureHelp`
+- [x] `completion`
+- [x] `completion resolve`
+- [x] `hover`
+- [x] `signatureHelp`
 - [ ] `declaration`
 - [ ] `definition`
 - [ ] `typeDefinition`
 - [ ] `implementation`
-- [ ] `references`
-- [ ] `documentHighlight`
-- [ ] `documentSymbol`
-- [ ] `codeAction`
-- [ ] `codeLens`
-- [ ] `codeLens resolve`
-- [ ] `documentLink`
-- [ ] `documentLink resolve`
-- [ ] `documentColor`
-- [ ] `colorPresentation`
-- [ ] `formatting`
-- [ ] `rangeFormatting`
-- [ ] `onTypeFormatting`
-- [ ] `rename`
-- [ ] `prepareRename`
-- [ ] `foldingRange`
+- [x] `references`
+- [x] `documentHighlight`
+- [x] `documentSymbol`
+- [x] `codeAction`
+- [x] `codeLens`
+- [x] `codeLens resolve`
+- [x] `documentLink`
+- [x] `documentLink resolve`
+- [x] `documentColor`
+- [x] `colorPresentation`
+- [x] `formatting`
+- [x] `rangeFormatting`
+- [x] `onTypeFormatting`
+- [x] `rename`
+- [x] `prepareRename`
+- [x] `foldingRange`
     
     
 ## OTHER TODO
