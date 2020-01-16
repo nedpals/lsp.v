@@ -14,15 +14,15 @@ pub struct CancelParams {
 }
 
 pub struct Command {
-	title string
-	command string
-	arguments []string
+	title       string
+	command     string
+	arguments   []string
 }
 
 pub struct DocumentFilter {
 	language string
-	scheme string
-	pattern string
+	scheme   string
+	pattern  string
 }
 
 

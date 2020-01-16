@@ -8,36 +8,36 @@ pub struct CodeActionOptions {
 // response [](Command | CodeAction) | null
 pub struct CodeActionParams {
 	text_document TextDocumentIdentifier [json:textDocument]
-	range Range
-	context CodeActionContext
+	range         Range
+	context       CodeActionContext
 }
 
 // type CodeActionKind string
 pub const (
-	Empty = ''
-	QuickFix = 'quickfix'
-	Refactor = 'refactor'
-	RefactorExtract = 'refactor.extract'
-	RefactorInline = 'refactor.inline'
-	RefactorRewrite = 'refactor.rewrite'
-	Source = 'source'
+	Empty                 = ''
+	QuickFix              = 'quickfix'
+	Refactor              = 'refactor'
+	RefactorExtract       = 'refactor.extract'
+	RefactorInline        = 'refactor.inline'
+	RefactorRewrite       = 'refactor.rewrite'
+	Source                = 'source'
 	SourceOrganizeImports = 'source.organizeImports'
 )
 
 pub struct CodeActionContext {
 	diagnostics []Diagnostic
-	only []string
+	only        []string
 }
 
 pub struct CodeAction {
-	title string
-	kind string // CodeActionKind
+	title       string
+	kind        string // CodeActionKind
 	diagnostics []Diagnostic
-	edit WorkspaceEdit
-	command Command
+	edit        WorkspaceEdit
+	command     Command
 }
 
 pub struct CodeActionRegistrationOptions {
-	document_selector DocumentSelector [json:documentSelector]
-	code_action_kinds []CodeActionKind [json:codeActionKinds]
+	document_selector   DocumentSelector [json:documentSelector]
+	code_action_kinds []CodeActionKind   [json:codeActionKinds ]
 }

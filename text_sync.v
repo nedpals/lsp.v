@@ -1,11 +1,11 @@
 module lsp
 
 pub struct TextDocumentSyncOptions {
-	open_close bool [json:openClose]
-	change int
-	will_save bool [json:willSave]
-	will_save_wait_until bool [json:willSaveWaitUntil]
-	save SaveOptions
+	open_close           bool        [json:openClose]
+	change               int
+	will_save            bool        [json:willSave]
+	will_save_wait_until bool        [json:willSaveWaitUntil]
+	save                 SaveOptions
 }
 
 pub struct SaveOptions {
@@ -21,32 +21,32 @@ pub struct DidOpenTextDocumentParams {
 // method: ‘textDocument/didChange’
 // notification
 pub struct DidChangeTextDocumentParams {
-	text_document VersionedTextDocumentIdentifier [json:textDocument]
+	text_document   VersionedTextDocumentIdentifier [json:textDocument]
 	content_changes []TextDocumentContentChangeEvent [json:contentChanges]
 }
 
 pub struct TextDocumentContentChangeEvent {
-	range Range
+	range        Range
 	range_length int [json:rangeLength]
-	text string
+	text         string
 }
 
 pub struct TextDocumentChangeRegistrationOptions {
 	document_selector DocumentSelector [json:documentSelector]
-	sync_kind int [json:syncKind]
+	sync_kind         int              [json:syncKind]
 }
 
 // method: ‘textDocument/willSave’
 // notification
 pub struct WillSaveTextDocumentParams {
 	text_document TextDocumentIdentifier [json:textDocument]
-	reason int
+	reason        int
 }
 
 pub enum TextDocumentSaveReason {
-	manual = 1
+	manual      = 1
 	after_delay = 2
-	focusout = 3
+	focusout    = 3
 }
 
 // ‘textDocument/willSaveWaitUntil’
@@ -57,12 +57,12 @@ pub enum TextDocumentSaveReason {
 // notification
 pub struct DidSaveTextDocumentParams {
 	text_document TextDocumentIdentifier [json:textDocument]
-	text string
+	text          string
 }
 
 pub struct TextDocumentChangeRegistrationOptions {
 	document_selector DocumentSelector [json:documentSelector]
-	include_text bool [json:includeText]
+	include_text      bool             [json:includeText]
 }
 
 // method: ‘textDocument/didClose’
@@ -70,4 +70,3 @@ pub struct TextDocumentChangeRegistrationOptions {
 pub struct DidCloseTextDocumentParams {
 	text_document TextDocumentIdentifier [json:textDocument]
 }
-

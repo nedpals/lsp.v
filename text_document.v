@@ -5,17 +5,17 @@ import math
 // @type DocumentUri string
 
 pub struct Position {
-    line int
+    line      int
     character int
 }
 
 pub struct Range {
     start Position
-    end Position
+    end   Position
 }
 
 pub struct TextEdit {
-	range Range
+	range    Range
 	new_text string
 }
 
@@ -25,66 +25,66 @@ pub struct TextDocumentIdentifier {
 
 pub struct TextDocumentEdit {
 	text_document VersionedTextDocumentIdentifier [json:textDocument]
-	edits []TextEdit
+	edits         []TextEdit
 }
 
 pub struct TextDocumentItem {
-	uri string
+	uri         string
 	language_id string [json:languageId]
-	version int
-	text string
+	version     int
+	text        string
 }
 
 pub struct VersionedTextDocumentIdentifier {
-	uri string
+	uri     string
 	version int
 }
 
 pub struct LocationLink {
-	origin_selection_range Range [json:originSelectionRange]
-	target_uri string [json:targetUri]
-	target_range Range [json:targetRange]
-	target_selection_range Range [json:targetSelectionRange]
+	origin_selection_range Range  [json:originSelectionRange]
+	target_uri             string [json:targetUri]
+	target_range           Range  [json:targetRange]
+	target_selection_range Range  [json:targetSelectionRange]
 }
 
 pub struct TextDocumentContentChangeEvent {
 	range Range
-	text string
+	text  string
 }
 
 pub struct TextDocumentPositionParams {
 	text_document TextDocumentIdentifier [json:textDocument]
-	position Position
+	position      Position
 }
 
 pub struct DocumentFilter {
 	language string
-	scheme string
-	pattern string
+	scheme   string
+	pattern  string
 }
 
 pub const {
 	PlainText = 'plaintext'
-	Markdown = 'markdown'
+	Markdown  = 'markdown'
 }
 
 pub struct MarkupContent {
-	kind MarkupKind
+	kind  MarkupKind
 	value string
 }
 
 pub struct TextDocument {
-	uri DocumentUri
+	uri         DocumentUri
 	language_id string
-	version int
-	line_count int
+	version     int
+	line_count  int
 }
 
 pub struct FullTextDocument {
-	uri DocumentUri
-	language_id string
-	version int
-	content string
+	uri          DocumentUri
+	language_id  string
+	version      int
+	content      string
 	line_offsets []int
 }
 
@@ -186,4 +186,3 @@ pub struct FullTextDocument {
 // 		if 
 // 	}
 // }
-

@@ -34,7 +34,7 @@ pub struct ConfigurationParams {
 
 pub struct ConfigurationItem {
 	scope_uri string [json:scopeUri]
-	section string
+	section   string
 }
 
 // method: ‘workspace/didChangeWatchedFiles’

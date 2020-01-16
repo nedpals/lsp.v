@@ -6,11 +6,11 @@ module lsp
 
 pub struct DocumentHighlight {
 	range Range
-	kind int
+	kind  int
 }
 
 pub const DocumentHighlightKind {
-// pub const 
+// pub const
 	text = 1
 	read = 2
 	write = 3

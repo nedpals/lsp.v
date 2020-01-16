@@ -36,7 +36,7 @@ pub struct DocumentOnTypeFormattingParams {
 }
 
 pub struct DocumentOnTypeFormattingRegistrationOptions {
-	document_selector DocumentSelector [json:documentSelector]
-	first_trigger_character string [json:firstTriggerCharacter]
-	more_trigger_character []string [json:moreTriggerCharacter]
+	document_selector       DocumentSelector [json:documentSelector]
+	first_trigger_character string           [json:firstTriggerCharacter]
+	more_trigger_character  []string         [json:moreTriggerCharacter ]
 }

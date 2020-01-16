@@ -1,8 +1,8 @@
 module lsp
 
 pub struct HoverSettings {
-	dynamic_registration bool [json:dynamicRegistration]
-	content_format []MarkupKind [json:contentFormat]
+	dynamic_registration   bool         [json:dynamicRegistration]
+	content_format         []MarkupKind [json:contentFormat]
 }
 
 // method: ‘textDocument/hover’
@@ -11,12 +11,11 @@ pub struct HoverSettings {
 
 pub struct Hover {
 	contents string [raw]
-	range Range
+	range            Range
 }
 
 // pub type MarkedString = string | MarkedStringS
 pub struct MarkedString {
 	language string
-	value string
+	value    string
 }
-
