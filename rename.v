@@ -8,13 +8,13 @@ pub struct RenameOptions {
 // response: WorkspaceEdit | none
 pub struct RenameParams {
 	text_docuent TextDocumentIdentifier [json:textDocument]
-	position Position
-	new_name string [json:newName]
+	position     Position
+	new_name     string [json:newName]
 }
 
 pub struct RenameRegistrationOptions {
 	document_selector DocumentSelector [json:documentSelector]
-	prepare_provider bool [json:prepareProvider]
+	prepare_provider  bool [json:prepareProvider]
 }
 
 // method: ‘textDocument/prepareRename’

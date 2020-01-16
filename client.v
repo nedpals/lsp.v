@@ -24,6 +24,6 @@ pub struct UnregistrationParams {
 }
 
 pub struct Unregistration {
-	id int
+	id     int
 	method string
 }

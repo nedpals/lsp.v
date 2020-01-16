@@ -15,14 +15,13 @@ pub struct FoldingRangeParams {
 pub enum FoldingRangeKind {
 	comment = 'comment'
 	imports = 'imports'
-	region = 'region'
+	region  = 'region'
 }
 
 pub struct FoldingRange {
-	start_line int [json:startLine]
+	start_line      int [json:startLine]
 	start_character int [json:startCharacter]
-	end_line int [json:endLine]
-	end_character int [json:endCharacter]
-	kind string
+	end_line        int [json:endLine]
+	end_character   int [json:endCharacter]
+	kind            string
 }
-

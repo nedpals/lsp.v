@@ -4,12 +4,12 @@ module lsp
 // response: InitializeResult
 // notes: should be map[string]string
 pub struct InitializeParams {
-	process_id int [json:processId]
-	root_uri string [json:rootUri]
+	process_id             int [json:processId]
+	root_uri               string [json:rootUri]
 	initialization_options UserInitializationOptions [json:initializationOptions]
-	capabilities ClientCapabilities
-	trace string
-	workspace_folders []WorkspaceFolder [json:workspaceFolders]
+	capabilities           ClientCapabilities
+	trace                  string
+	workspace_folders      []WorkspaceFolder [json:workspaceFolders]
 }
 
 pub struct InitializeResult {
@@ -41,8 +41,8 @@ pub enum FailureHandlingKind {
 
 // TextDocumentSyncKind
 pub const (
-	None = 0
-	Full = 1
+	None        = 0
+	Full        = 1
 	Incremental = 2
 )
 

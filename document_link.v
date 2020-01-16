@@ -11,14 +11,14 @@ pub struct DocumentLinkParams {
 }
 
 pub struct DocumentLink {
-	range Range
+	range  Range
 	target string
-	data string [raw]
+	data   string [raw]
 }
 
 pub struct DocumentLinkRegistrationOptions {
 	document_selector DocumentSelector [json:documentSelector]
-	resolve_provider bool [json:resolveProvider]
+	resolve_provider  bool             [json:resolveProvider]
 }
 
 // method: ‘documentLink/resolve’

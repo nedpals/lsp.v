@@ -12,9 +12,8 @@ pub struct ColorInformation {
 }
 
 pub struct Color {
-	red int
-	green int 
-	blue int
+	red   int
+	green int
+	blue  int
 	alpha int
 }
-
